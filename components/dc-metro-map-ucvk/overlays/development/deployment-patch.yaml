@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-ucvk
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-deploy-tenant/appstudio/dc-metro-map-ucvk@sha256:c7151ec2117b1aa5eccf45891ad089055f6eb1027c35bece1d1f4c10a3a22792
+        name: my-nodejs
+        resources: {}
+status: {}
